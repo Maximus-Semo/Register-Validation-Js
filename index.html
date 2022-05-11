@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <script defer src="javscript.js"></script>
+</head>
+<body>
+    <main id="main">
+        <section>
+            <h1>
+                10-validation form
+            </h1>
+           <div class="parent-of-form">
+            <form action="action_page.php">
+                <div style="position: relative;" class="container">
+
+                    <h2>Create Account</h2>
+                    <div id="close"> &#10006;</div>
+                    
+                    <div class="papa">  
+                        <label for="username"><b>UserName</b></label>
+                        <input  id="username" type="text" placeholder="Enter UserName" name="email" required>
+                        <div class="icon-check-circle-o"></div>
+                        <p id="usermessage">at least 3 character</p>
+
+                    </div>
+                    <div class="papa">  
+                        <label for="email"><b>Email</b></label>
+                        <input  id="email" type="email" placeholder="Enter Email" name="email" required>
+                        <div class="icon-check-circle-o"></div>
+                        <p id="emailmessage">please enter a correct email address</p>
+
+                    </div>
+                    <div class="papa">  
+                        <label for="psw"><b>Password</b></label>
+                        <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                        <div class="icon-check-circle-o"></div>
+                        <p id="passwordmessage">password must be lt least 8 charcters with 1 upper case letter and 1 number </p>
+
+                    </div>
+                    <div class="papa">  
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input id="pswrepeat" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <div class="icon-check-circle-o"></div>
+                        <p id="repatypasswordmessage">please make sure your passwords match</p>
+                    </div>
+
+              
+              
+              
+                  <hr>
+              
+                  <button disabled id="regis" class="registerbtn" type="submit">Register</button>
+                </div>
+              
+              </form>
+           </div>
+        
+        </section>
+    </main>
+</body>
+</html>
